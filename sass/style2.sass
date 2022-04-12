@@ -1,0 +1,43 @@
+body
+  background: url('../img/blue-wooden-texture.jpg')
+  margin: 0
+  padding: 0
+
+.main_container  
+  width: fit-content
+  background: url('../img/ning.jpg') center (center / cover) no-repeat
+  margin: 40px auto
+  padding: 0 25px 0 25px
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.8)
+
+.logo
+  display: flex
+  justify-content: center
+
+.logo_item
+  padding: 0 10px
+  &::after
+    content: ''
+    display: block
+    height: 2px
+    width: 0%
+    background-color: #00000091
+    transition: 0.5s all
+  &:hover
+    &::after
+      width: 100%
+
+.main_content_section
+  padding: 50px 0
+  max-width: 1000px
+  text-align: center
+  
+.adaptive
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-evenly
+  align-items: baseline
+
+.img_hobby
+  margin-top: 40px
+  
