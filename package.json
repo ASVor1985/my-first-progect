@@ -1,0 +1,29 @@
+{
+  "name": "my-resume",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000m\u0000y\u0000-\u0000f\u0000i\u0000r\u0000s\u0000t\u0000-\u0000p\u0000r\u0000o\u0000g\u0000e\u0000c\u0000t\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ASVor1985/my-first-progect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ASVor1985/my-first-progect/issues"
+  },
+  "homepage": "https://github.com/ASVor1985/my-first-progect#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.1"
+  }
+}
