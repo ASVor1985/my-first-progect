@@ -224,3 +224,49 @@ header
   font-size: 14px
   line-height: 24px
   color: #fff
+
+.block
+  display: none
+
+@media screen and (max-width: 425px)
+  .main_content_section
+    display: none
+  .sidebar_section
+    width: 220px
+  .contacts_section, .tech_skills_section, .soft_skills_section
+    margin-left: 10px
+  .block
+    display: block
+  .block__item
+    margin: 20px 0 20px 0
+  .block__title
+    text-transform: uppercase
+    litter-spacing: 2px
+    position: relative
+    padding: 0 0 0 30px
+    cursor: pointer
+  .block__title::before,
+  .block__title::after
+    content: ''
+    width: 10px
+    height: 1px
+    background-color: black
+    position: absolute
+    top: 8px
+    transition: all 0.3s ease 0s
+  .block__title::before
+    transform: rotate(40deg)
+    left: 0
+  .block__title::after
+    transform: rotate(-40deg)
+    left: 8px
+  .block__title.active::before,
+  .block__title.active::after
+    background-color: red
+  .block__title.active::before
+    transform: rotate(-40deg)
+  .block__title.active::after
+    transform: rotate(40deg)
+  .block__text
+    display: none
+    padding: 10px 0 0 0
