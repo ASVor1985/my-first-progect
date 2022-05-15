@@ -49,16 +49,43 @@ body
     display: none
   .carousel__inner
     &:hover
+      position: relative
       display: flex
       flex-wrap: wrap
       justify-content: space-evenly
       align-items: baseline
       margin: 10px auto
+  .main_conteiner
+    max-width: fit-content
   .main_content_section
-    width: 100vw
+    max-width: 100vw
   .carousel__inner img
+    height: 300px
     max-width: 100vw
     margin: 10px
-    padding: 15px
+    padding: 15px 15px 15px 10px
   .slick-slide img
-    display: inline-block
+    display: inline-block  
+  .slick-dots 
+    text-align: center
+    display: flex
+    justify-content: center
+    list-style: none
+  .slick-dots button
+    font-size: 0
+    background: #948b8477
+    border: 1px solid transparent
+    width: 25px
+    margin: 5px
+  .slick-dots li[class="slick-active"] button 
+    background: #a3a1a0
+    border-color: #05050579
+  .carousel__inner .slick-arrow
+    position: absolute
+    top: 50%
+    margin: -35px 0 0 0
+    z-index: 2
+  .carousel__inner .slick-arrow.slick-prev 
+    left: 0
+  .carousel__inner .slick-arrow.slick-next 
+    right: -7px
