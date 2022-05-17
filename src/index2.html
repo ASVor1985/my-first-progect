@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/style2.min.css">
+    <link rel="stylesheet" href="../css/magniffic-popup.css">
+<!--     <script language = "JavaScript">
+        var bigsize = "1000"; //Размер большой картинки
+        var smallsize = "500"; //Размер маленькой картинки
+        function changeSizeImage(im) {
+          if(im.height == bigsize) im.height = smallsize;
+          else im.height = bigsize;
+        }
+        </script> -->
 </head>
 <body>
     <div class="conteiner">
@@ -19,12 +28,12 @@
                 
                 <div  class="logo">
                     <a href="../index.html" class="logo_item"><img width="40px" height="40px" src="../logo/resume.png" alt="resume"></a>
-                    <a href="../src/index2.html" class="logo_item"><img width="40px" height="40px" src="../logo/hobby.png" alt="hobby"></a>
-                    <a href="../src/index3.html" class="logo_item"><img width="40px" height="40px" src="../logo/contacts.png" alt="contacts"></a>
+                    <a href="../index2.html" class="logo_item"><img width="40px" height="40px" src="../logo/hobby.png" alt="hobby"></a>
+                    <a href="../index3.html" class="logo_item"><img width="40px" height="40px" src="../logo/contacts.png" alt="contacts"></a>
                 </div>
 
                 <div class="adaptive">
-                    <img class="img_hobby col-7"  src="img/hobby.JPG" alt="hobby">
+                    <img class="img_hobby col-7"  src="img/hobby.JPG" alt="hobby" onclick="changeSizeImage(this)">
                     <img class="img_hobby col-4"  src="img/hobby2.JPG" alt="hobby2">
                     <img class="img_hobby col-5"  src="img/hobby3.JPG" alt="hobby3">
                     <img class="img_hobby col-6"  src="img/hobby4.JPG" alt="hobby4">
@@ -36,6 +45,15 @@
                         <div class="carousel__inner">
                             <div>
                                 <img class="crousel__img" src="img/hobby.JPG" alt="hobby">
+                                
+<!--                                 <table align="center">
+                                    <tr>
+                                    <td align="center">
+                                        <img src="img/hobby.JPG" height="100" onclick="changeSizeImage(this)" />
+                                    </td>
+                                    </tr>
+                                </table> -->
+
                             </div>
                             <div>
                                 <img class="crousel__img"src="img/hobby2.JPG" alt="hobby2">
@@ -63,5 +81,6 @@
     <script src="../js/jquery-migrate-1.2.1.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/script.js"></script>
+
 </body>
 </html>
