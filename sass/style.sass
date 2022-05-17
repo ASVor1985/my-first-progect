@@ -29,7 +29,7 @@ header
 .main_container
   display: flex
   flex-direction: row-reverse
-  width: fit-content
+  max-width: fit-content
   background: url('../img/ning.jpg') center (center / cover) no-repeat
   margin: 40px auto
   padding: 0 0 0 25px
@@ -229,6 +229,8 @@ header
   display: none
 
 @media screen and (max-width: 425px)
+  .main_container
+    max-width: 100%
   .main_content_section
     display: none
   .sidebar_section
@@ -276,3 +278,7 @@ header
       color: #FB6D3A
     p
       color: $text_color
+  ol
+    padding-left: 17px
+  ul
+    padding-left: 12px

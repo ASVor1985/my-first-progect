@@ -3,8 +3,11 @@ body
   margin: 0
   padding: 0
 
+.conteiner
+  margin: 0 auto
+  
 .main_container  
-  width: fit-content
+  max-width: fit-content
   background: url('../img/ning.jpg') center (center / cover) no-repeat
   margin: 40px auto
   padding: 0 25px 0 25px
@@ -56,14 +59,14 @@ body
       align-items: baseline
       margin: 10px auto
   .main_conteiner
-    max-width: fit-content
+    max-width: 100%
   .main_content_section
     max-width: 100vw
   .carousel__inner img
-    height: 300px
-    max-width: 100vw
+    max-height: 300px
+    max-width: 100%
     margin: 10px
-    padding: 15px 15px 15px 10px
+    padding: 15px 20px 15px 0
   .slick-slide img
     display: inline-block  
   .slick-dots 
@@ -86,6 +89,6 @@ body
     margin: -35px 0 0 0
     z-index: 2
   .carousel__inner .slick-arrow.slick-prev 
-    left: 0
+    left: -10px
   .carousel__inner .slick-arrow.slick-next
-    right: -7px
+    right: -10px
